@@ -57,3 +57,6 @@ typings/
 # dotenv environment variables file
 .env
 
+# dist
+# for the time being, we'll not commit the built html
+dist

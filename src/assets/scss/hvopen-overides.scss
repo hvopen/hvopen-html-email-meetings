@@ -1,0 +1,28 @@
+/*
+ *
+ * Settings
+ *
+ */
+
+$hv-light-grey: #f7f7f7;
+
+/*
+ *
+ * Header
+ *
+ */
+
+.header {
+	background: $hv-light-grey;
+}
+
+
+/*
+ *
+ * body
+ *
+ */
+
+ body, html, .body {
+    background: $hv-light-grey !important;
+}

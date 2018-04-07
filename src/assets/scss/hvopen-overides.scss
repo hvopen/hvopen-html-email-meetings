@@ -4,7 +4,8 @@
  *
  */
 
-$hv-light-grey: #f7f7f7;
+$hv_light_grey: #f7f7f7;
+$hv_grey_accent: #b5b6bc;
 
 /*
  *
@@ -13,7 +14,7 @@ $hv-light-grey: #f7f7f7;
  */
 
 .header {
-	background: $hv-light-grey;
+	background: $hv_light_grey;
 }
 
 
@@ -24,5 +25,12 @@ $hv-light-grey: #f7f7f7;
  */
 
  body, html, .body {
-    background: $hv-light-grey !important;
+    background: $hv_light_grey !important;
+}
+
+.hvopen_prelim_callout, 
+.hvopen_prelim_callout_full_string_month {
+	color: $hv_grey_accent;
+	font-style: italic;
+	font-size: 16px;
 }

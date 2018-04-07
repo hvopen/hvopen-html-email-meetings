@@ -18,7 +18,7 @@ npm run build
 ```
 
 At this point, if everything went well, many things have happened:
-- all of the email html in the `./src/pages` directory are built with all css inlined and [foundation inky components]() built into the proper table format for emailing
+- all of the email html in the `./src/pages` directory are built with all css inlined and [foundation inky components](https://foundation.zurb.com/emails/docs/inky.html) built into the proper table format for emailing
 - a browser opened to localhost:3000 so you can preview the build emails
 - a watch task is running in the terminal to react to changes to html and scss files
 - a browsersync task is running in the same terminal that will auto reload the browsers open to the localhost:3000 to show you the changes you made on every save.

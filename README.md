@@ -1,8 +1,31 @@
 # hvopen-html-email-meetings
 The html email template used to deliver meeting announcements via mailchimp.
 
+### Getting started
+1. clone this repo:
+```
+git clone https://github.com/hvopen/hvopen-html-email-meetings.git
+```
+
+2. Install the dependancies:
+```
+npm install
+```
+
+3. Run the project
+```
+npm run build
+```
+
+At this point, if everything went well, many things have happened:
+- all of the email html in the `./src/pages` directory are built with all css inlined and [foundation inky components]() built into the proper table format for emailing
+- a browser opened to localhost:3000 so you can preview the build emails
+- a watch task is running in the terminal to react to changes to html and scss files
+- a browsersync task is running in the same terminal that will auto reload the browsers open to the localhost:3000 to show you the changes you made on every save.
+
 ### How to build the template
-- todo
+- run `npm build`
+- look in the .`/dist` directory and find the `./dist/monthly-meeting.html`
 
 ### How to upload the built template:
 - todo

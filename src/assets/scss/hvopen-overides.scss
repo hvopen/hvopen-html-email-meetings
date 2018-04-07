@@ -7,6 +7,11 @@
 $hv_light_grey: #f7f7f7;
 $hv_grey_accent: #b5b6bc;
 
+// table.container {
+// 	width: 800px
+// }
+
+
 /*
  *
  * Header
@@ -33,4 +38,8 @@ $hv_grey_accent: #b5b6bc;
 	color: $hv_grey_accent;
 	font-style: italic;
 	font-size: 16px;
+}
+
+.hvopen_talk_title {
+	font-weight: bold;
 }

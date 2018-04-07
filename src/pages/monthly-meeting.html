@@ -1,6 +1,4 @@
----
-subject: My Hero Sidebar Template Subject
----
+<!-- --- subject: My Hero Sidebar Template Subject --- -->
 
 <wrapper class="header">
   <container>
@@ -9,7 +7,7 @@ subject: My Hero Sidebar Template Subject
 
       <columns small="6">
         <a href="https://hvopen.org" target="_blank">
-          <img src="/assets/img/logo_medium.png">
+          <img mc:edit="$hvopen_logo" src="/assets/img/logo_medium.png">
         </a>
       </columns>
 
@@ -20,31 +18,57 @@ subject: My Hero Sidebar Template Subject
 
 <container>
 
-  <!-- <spacer size="16"></spacer> -->
-
-<row>
+  <!-- prelim_callout -->
+  <row>
     <columns large="16">
       <spacer size="16"></spacer>
-      <h3 class="hvopen_prelim_callout">HV Open <span class="hvopen_prelim_callout_full_string_month">April</span> Lecture</h3>
-      <!-- <spacer size="16"></spacer> -->
+      <h3 class="hvopen_prelim_callout">HV Open
+        <span class="hvopen_prelim_callout_full_string_month" mc:edit="$hvopen_prelim_callout_full_string_month">April</span> Lecture</h3>
     </columns>
-</row>
+  </row>
 
+  <!-- main_content -->
+  <row>
+    <columns large="8">
+      <h2 class="hvopen_talk_title" mc:edit="$hvopen_talk_title">Unity 3D</h2>
+      <div class="hvopen_talk_image">
+        <img src="https://hvopen.org/images/talks/unity3d1_logo.jpg" alt="unity3d" mc:edit="$hvopen_talk_image"/>
+      </div>
+      <div class="hvopen_talk_description" mc:edit="$hvopen_talk_description">
+          <p>Unity 3D (not to be confused with the Ubuntu's abandoned Unity
+              project), is a cross-platform game development platform. Using this
+              platform, you can script your games in JavaScript or C# and drag and
+              drop objects and components all in a flexible graphical user
+              interface. In this presentation, Matthias will demonstrate how to
+              import sprite sheets, attach and write scripts, make animations,
+              create artwork, game menus, tweak particle systems, use physics, and
+              more.</p>
+          <h3>Speaker</h3>
+          <p>Matthias Johnson is the Director of Technology at Our Lady of Lourdes
+              High School, and Program Director for HV Open. He's been teaching game
+              programming as part of his role at Lourdes the past few years and is
+              excited to share some of those experiences.</p>
+          <h3>Lightning Talks</h3>
+          <ul>
+              <li><a href="https://foundation.zurb.com/emails.html" rel="nofollow">Foundation for Emails 2</a> -
+              Al Jachimiak</li>
+              <li><a href="https://hvopen.org/slack" rel="nofollow">HV Open Slack</a> - Joe Apuzo</li>
+              <li>The new HV Open website and Code of Conduct - Sean Dague</li>
+          </ul>
 
-<row>
-    <columns large="7">
-      
-      <h2>Hello, Han Fastolfe</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam nobis velit, aliquid pariatur at fugit. Omnis at quae, libero iusto quisquam animi blanditiis neque, alias minima corporis, ab in explicabo?</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dignissimos voluptas minus, cupiditate voluptatem, voluptatum iste molestiae consectetur temporibus quae dolore nam possimus reprehenderit blanditiis laborum iusto sit. Perspiciatis, dolor.</p>
+      </div>
       <callout class="secondary">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quas optio totam quidem, placeat sunt, sit iusto fugit. Harum omnis deleniti enim nihil iure, quis laudantium veniam velit animi debitis. <a href="#">Click It!</a>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quas optio totam quidem, placeat sunt, sit iusto fugit. Harum
+        omnis deleniti enim nihil iure, quis laudantium veniam velit animi debitis.
+        <a href="#">Click It!</a>
       </callout>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores minus eius amet alias odit accusantium, fugit perspiciatis nulla suscipit nisi. Laborum aliquid, voluptatum consectetur fugiat maxime architecto enim molestias aperiam!</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eveniet veritatis, magnam ipsam et vero necessitatibus. Deserunt facilis impedit, adipisci illo laboriosam assumenda fugiat dolorum nam odio aliquid, sit est.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores minus eius amet alias odit accusantium, fugit perspiciatis
+        nulla suscipit nisi. Laborum aliquid, voluptatum consectetur fugiat maxime architecto enim molestias aperiam!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eveniet veritatis, magnam ipsam et vero necessitatibus.
+        Deserunt facilis impedit, adipisci illo laboriosam assumenda fugiat dolorum nam odio aliquid, sit est.</p>
       <button class="expand" href="#">Click Me!</button>
     </columns>
-    <columns large="5" class="sidebar">
+    <columns large="4" class="sidebar">
       <callout class="secondary">
         <h5>Header</h5>
         <p class="lead">Sub-header</p>
@@ -65,10 +89,13 @@ subject: My Hero Sidebar Template Subject
         <button class="google expand" href="#">Google+</button>
         <p>CONTACT INFO:</p>
         <p>Phone: 408-341-0600</p>
-        <p>Email: <a href="mailto:foundation@zurb.com">foundation@zurb.com</a></p>
+        <p>Email:
+          <a href="mailto:foundation@zurb.com">foundation@zurb.com</a>
+        </p>
       </callout>
     </columns>
   </row>
+
   <row>
     <columns>
       <center>
@@ -81,3 +108,13 @@ subject: My Hero Sidebar Template Subject
     </columns>
   </row>
 </container>
+
+<!-- 
+  List of unique fields:
+    $hvopen_logo
+    $hvopen_prelim_callout_full_string_month
+    hvopen_talk_title
+    $hvopen_talk_image
+    $hvopen_talk_description
+
+ -->

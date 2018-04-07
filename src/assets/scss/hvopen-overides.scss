@@ -4,6 +4,7 @@
  *
  */
 
+$hv_body_text: #17171A;
 $hv_light_grey: #f7f7f7;
 $hv_grey_accent: #b5b6bc;
 $hv_yellow: #ffd503;
@@ -26,7 +27,10 @@ $hv_yellow: #ffd503;
  */
 
  body, html, .body {
-    background: $hv_light_grey !important;
+	background: $hv_light_grey !important;
+	p {
+		color: $hv_body_text;
+	}
 }
 
 .hvopen_prelim_callout, 
@@ -99,5 +103,23 @@ $hv_yellow: #ffd503;
 .hvopen_cal_date_time,
 .hvopen_cal_date_time_lMp {
 	background-color: #f3f3f3;
+}
+
+/*
+ *
+ * where/when table
+ *
+ */
+.hvopen_where_when {
+	td:first-of-type{
+		color: $hv_grey_accent;
+	}
+	td:last-of-type,
+	.hvopen_date_day_month_date_year,
+	.hvopen_time_span,
+	.hvopen_location_full {
+		color: $hv_body_text;
+		font-weight: 700;
+	}
 }
 

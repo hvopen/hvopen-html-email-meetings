@@ -8,6 +8,7 @@ $hv_body_text: #17171A;
 $hv_light_grey: #f7f7f7;
 $hv_grey_accent: #b5b6bc;
 $hv_yellow: #ffd503;
+$hv_link_blue: #1684B9;
 
 /*
  *
@@ -30,6 +31,9 @@ $hv_yellow: #ffd503;
 	background: $hv_light_grey !important;
 	p {
 		color: $hv_body_text;
+	}
+	a {
+		color: $hv_link_blue;
 	}
 }
 
@@ -123,3 +127,12 @@ $hv_yellow: #ffd503;
 	}
 }
 
+/*
+ *
+ * Upcoming events
+ *
+ */
+.hvopen_upcoming_event_date {
+	margin-top: 12px;
+	font-size: 18px;
+}

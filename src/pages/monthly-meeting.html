@@ -109,39 +109,39 @@
   <row>
     <columns>
       <table class="hvopen_where_when">
-          <thead></thead>
-          <tbody>
-            <tr>
-              <td>Date:</td>
-              <td class="hvopen_date_day_month_date_year"  mc:edit="$hvopen_date_day_month_date_year">Wed, April 3, 2018</td>
-            </tr>
-            <tr>
-              <td>Time:</td>
-              <td class="hvopen_time_span" mc:edit="$hvopen_time_span">6pm - 8pm</td>
-            </tr>
-            <tr>
-              <td>Location:</td>
-              <td class="hvopen_location_full" mc:edit="$hvopen_location_full">300 Rockefeller Hall, Vassar College, Poughkeepsie, NY</td>
-            </tr>
-          </tbody>
-        </table>
+        <thead></thead>
+        <tbody>
+          <tr>
+            <td>Date:</td>
+            <td class="hvopen_date_day_month_date_year" mc:edit="$hvopen_date_day_month_date_year">Wed, April 3, 2018</td>
+          </tr>
+          <tr>
+            <td>Time:</td>
+            <td class="hvopen_time_span" mc:edit="$hvopen_time_span">6pm - 8pm</td>
+          </tr>
+          <tr>
+            <td>Location:</td>
+            <td class="hvopen_location_full" mc:edit="$hvopen_location_full">300 Rockefeller Hall, Vassar College, Poughkeepsie, NY</td>
+          </tr>
+        </tbody>
+      </table>
     </columns>
   </row>
 
   <row>
     <columns large="6">
       <center>
-          <div mc:edit="$hvopen_meetup_button_markup">
-              <button href="#">RSVP on Meetup</button>
-          </div>
+        <div mc:edit="$hvopen_meetup_button_markup">
+          <button href="#">RSVP on Meetup</button>
+        </div>
       </center>
     </columns>
 
     <columns large="6">
       <center>
-          <div mc:edit="$hvopen_cal_button_markup">
-              <button href="#">Add To Calendar</button>
-          </div>
+        <div mc:edit="$hvopen_cal_button_markup">
+          <button href="#">Add To Calendar</button>
+        </div>
       </center>
     </columns>
   </row>
@@ -157,6 +157,49 @@
       </center>
     </columns>
   </row>
+
+
+  <row mc:hideable>
+    <hr>
+    <columns>
+      <h2>Upcoming Events</h2>
+      <!-- https://stackoverflow.com/questions/15763866/making-only-the-link-destination-editable-in-mailchimp#answer-26914066 -->
+      <!-- hrefs in a tags might not be adressable in a template.  probably need to insert the link fully composed into a tag -->
+
+      <div mc:repeatable="hvopen_upcoming_events">
+        <dt class="hvopen_upcoming_event_date" mc:edit="$hvopen_upcoming_event_date">Event Date
+        </dt>
+        <dd mc:edit="$hvopen_upcoming_event_link_html">
+          <a href="">Name of Event linked to Meetup.com</a>
+        </dd>
+      </div>
+
+      <div mc:repeatable="hvopen_upcoming_events">
+        <dt class="hvopen_upcoming_event_date" mc:edit="$hvopen_upcoming_event_date">Event Date
+        </dt>
+        <dd mc:edit="$hvopen_upcoming_event_link_html">
+          <a href="">Name of Event linked to Meetup.com</a>
+        </dd>
+      </div>
+
+      <div mc:repeatable="hvopen_upcoming_events">
+        <dt class="hvopen_upcoming_event_date" mc:edit="$hvopen_upcoming_event_date">Event Date
+        </dt>
+        <dd mc:edit="$hvopen_upcoming_event_link_html">
+          <a href="">Name of Event linked to Meetup.com</a>
+        </dd>
+      </div>
+
+
+
+
+
+
+
+    </columns>
+  </row>
+
+
 </container>
 
 <!-- 

@@ -140,7 +140,7 @@
 
   <row>
     <columns>
-      
+
     </columns>
   </row>
 
@@ -177,27 +177,42 @@
     </columns>
   </row>
 
-  <row mc:hideable mc:edit="hvopen_related_metups" class="hvopen_related_meetups">
+  <row mc:hideable class="hvopen_related_meetups">
     <hr class="hvopen_hr" />
     <columns>
-      <h2>Related Meetups</h2>
-      <p>
-        Like what's going on at MHVLUG? Want more? Check out all these other interesting technology groups in our region:
-      </p>
+      <div mc:edit="$hvopen_related_metups">
+        <h2>Related Meetups</h2>
+        <p>
+          Like what's going on at MHVLUG? Want more? Check out all these other interesting technology groups in our region:
+        </p>
 
-      <ul>
-        <li>
-          <a href="https://www.meetup.com/ACM-Poughkeepsie/">Poughkeepsie Chapter of the ACM</a>
-        </li>
-        <li>
-          <a href="https://www.meetup.com/hvtech/">Hudson Valley Tech Meetup</a>
-        </li>
-        <li>
-          <a href="https://www.meetup.com/squidwrench/">Squidwrench hackerspace</a>
-        </li>
-      </ul>
+        <ul>
+          <li>
+            <a href="https://www.meetup.com/ACM-Poughkeepsie/">Poughkeepsie Chapter of the ACM</a>
+          </li>
+          <li>
+            <a href="https://www.meetup.com/hvtech/">Hudson Valley Tech Meetup</a>
+          </li>
+          <li>
+            <a href="https://www.meetup.com/squidwrench/">Squidwrench hackerspace</a>
+          </li>
+        </ul>
+      </div>
     </columns>
   </row>
+
+  <row mc:hideable class="hvopen_call_for_speakers">
+    <hr class="hvopen_hr" />
+    <columns>
+      <div  mc:edit="$hvopen_call_for_speakers">
+        <h2>Open Call for Speaker Topics </h2>
+        <p>Is there some topic that you'd love to hear more about? A topic that you've been working on that you'd like to present? A great speaker in the area we should know about?</p>
+
+        <p>Let us know with our <a href="https://docs.google.com/forms/d/e/1FAIpQLSfcneYqNZciNmcNWyrNqNIjmtyeZ2EXmkFriBvuzy5GOhB5_Q/viewform">contact form</a>.</p>
+      </div>
+    </columns>
+  </row>
+
 </container>
 
 <div class="hvopen_banner_img"></div>
@@ -221,6 +236,7 @@
     $hvopen_upcoming_event_link_html
     $hvopen_banner_img
     $hvopen_related_metups
+    $hvopen_call_for_speakers
 
   Repeatable:
     hvopen_upcoming_events

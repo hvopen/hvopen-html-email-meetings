@@ -26,14 +26,6 @@
         <span class="hvopen_prelim_callout_full_string_month" mc:edit="$hvopen_prelim_callout_full_string_month">April</span> Lecture</h3>
     </columns>
   </row>
-  <row>
-    <columns large="7">
-
-    </columns>
-    <columns large="5">
-
-    </columns>
-  </row>
 
   <!-- main_content -->
   <row>
@@ -148,19 +140,12 @@
 
   <row>
     <columns>
-      <center>
-        <menu>
-          <item href="#">Terms</item>
-          <item href="#">Privacy</item>
-          <item href="#">Unsubscribe</item>
-        </menu>
-      </center>
+      
     </columns>
   </row>
 
-
   <row mc:hideable>
-    <hr>
+    <hr class="hvopen_hr" />
     <columns>
       <h2>Upcoming Events</h2>
       <!-- https://stackoverflow.com/questions/15763866/making-only-the-link-destination-editable-in-mailchimp#answer-26914066 -->
@@ -191,10 +176,31 @@
       </div>
     </columns>
   </row>
-  <row mc:hideable>
-      <div class="hvopen_banner_img"></div>
-    </row>
+
+  <row mc:hideable mc:edit="hvopen_related_metups" class="hvopen_related_meetups">
+    <hr class="hvopen_hr" />
+    <columns>
+      <h2>Related Meetups</h2>
+      <p>
+        Like what's going on at MHVLUG? Want more? Check out all these other interesting technology groups in our region:
+      </p>
+
+      <ul>
+        <li>
+          <a href="https://www.meetup.com/ACM-Poughkeepsie/">Poughkeepsie Chapter of the ACM</a>
+        </li>
+        <li>
+          <a href="https://www.meetup.com/hvtech/">Hudson Valley Tech Meetup</a>
+        </li>
+        <li>
+          <a href="https://www.meetup.com/squidwrench/">Squidwrench hackerspace</a>
+        </li>
+      </ul>
+    </columns>
+  </row>
 </container>
+
+<div class="hvopen_banner_img"></div>
 
 <!-- 
   List of unique fields:
@@ -214,6 +220,7 @@
     $hvopen_upcoming_event_date
     $hvopen_upcoming_event_link_html
     $hvopen_banner_img
+    $hvopen_related_metups
 
   Repeatable:
     hvopen_upcoming_events

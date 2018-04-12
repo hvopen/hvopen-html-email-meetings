@@ -35,6 +35,12 @@ $hv_link_blue: #1684B9;
 	a {
 		color: $hv_link_blue;
 	}
+	hr.hvopen_hr {
+		border: solid 1px $hv_grey_accent;
+		border-width: 1px 0 0 0;
+		margin: 30px 0;
+	}
+
 }
 
 .hvopen_prelim_callout, 
@@ -140,4 +146,11 @@ $hv_link_blue: #1684B9;
 .hvopen_banner_img {
 	background-image: url('https://d33wubrfki0l68.cloudfront.net/images/220ee1c648c40ca97843ed36bcd1c65a041a3e21/banner-wide-white.jpg');
 	height: 200px;
+}
+
+table.body .hvopen_related_meetups {
+	img {
+		height: 50px;
+		width: 50px;
+	}
 }

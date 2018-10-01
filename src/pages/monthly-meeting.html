@@ -32,16 +32,22 @@
     <columns large="8">
       <h2 class="hvopen_talk_title" mc:edit="$hvopen_talk_title">Unity 3D</h2>
       <div class="hvopen_talk_description" mc:edit="$hvopen_talk_description">
-        <p>Unity 3D (not to be confused with the Ubuntu's abandoned Unity project), is a cross-platform game development platform.
-          Using this platform, you can script your games in JavaScript or C# and drag and drop objects and components all
-          in a flexible graphical user interface. In this presentation, Matthias will demonstrate how to import sprite sheets,
-          attach and write scripts, make animations, create artwork, game menus, tweak particle systems, use physics, and
-          more.
+        <p>Unity 3D (not to be confused with the Ubuntu's abandoned
+          Unity project), is a cross-platform game development
+          platform.  Using this platform, you can script your games in
+          JavaScript or C# and drag and drop objects and components
+          all in a flexible graphical user interface. In this
+          presentation, Matthias will demonstrate how to import sprite
+          sheets, attach and write scripts, make animations, create
+          artwork, game menus, tweak particle systems, use physics,
+          and more.
         </p>
         <h3>Speaker</h3>
-        <p>Matthias Johnson is the Director of Technology at Our Lady of Lourdes High School, and Program Director for HV Open.
-          He's been teaching game programming as part of his role at Lourdes the past few years and is excited to share some
-          of those experiences.</p>
+        <p>Matthias Johnson is the Director of Technology at Our Lady
+          of Lourdes High School, and Program Director for HV Open.
+          He's been teaching game programming as part of his role at
+          Lourdes the past few years and is excited to share some of
+          those experiences.</p>
         <h3>Lightning Talks</h3>
         <ul>
           <li>
@@ -56,12 +62,12 @@
     </columns>
 
     <!-- sidebar -->
-    <columns large="4" class="sidebar">
-      <div class="hvopen_sidebar">
+    <columns large="4" class="sidebar show-for-large ">
+      <div class="hvopen_sidebar show-for-large">
         <center>
 
-          <div class="hvopen_talk_image">
-            <img src="https://hvopen.org/images/talks/unity3d1_logo.jpg" alt="unity3d" mc:edit="$hvopen_talk_image" />
+          <div class="hvopen_talk_image show-for-large" mc:edit="$hvopen_talk_image">
+            <img src="https://hvopen.org/images/talks/unity3d1_logo.jpg" alt="unity3d"  />
           </div>
 
           <div class="hvopen_cal">
@@ -121,38 +127,46 @@
   </row>
 
   <row>
-    <columns large="6">
+    <columns>
       <center>
         <div mc:edit="$hvopen_meetup_button_markup">
           <button href="#">RSVP on Meetup</button>
         </div>
       </center>
     </columns>
-
-    <columns large="6">
-      <center>
-        <div mc:edit="$hvopen_cal_button_markup">
-          <button href="#">Add To Calendar</button>
-        </div>
-      </center>
-    </columns>
-  </row>
-
-  <row>
-    <columns>
-
-    </columns>
   </row>
 
   <row>
     <hr class="hvopen_hr" />
     <columns>
-      <div mc:edit="$hvopen-upcoming-events">
+      <div>
+        <h2>Support us on Patreon!</h2>
+        <p>
+          HV Open is powered by you! For the past 15 years HV Open has
+          provided high quality technical lectures to the Hudson
+          Valley. We do have a few hundred dollars a year of
+          incidental expenses to keep the group going.
+        </p>
+        <p>
+          Please consider a monthly Patreon donations
+          of <b>$2</b>, <b>$5</b>, or even <b>$10</b> to help us keep
+          the group going.
+        </p>
+        <center>
+          <div mc:edit="$hvopen_patreon_button">
+            <button href="#">Support HV Open</button>
+          </div>
+        </center>
+      </div>
+  </row>
+
+  <row>
+    <hr class="hvopen_hr" />
+    <columns>
         <h2>Upcoming Events</h2>
         <!-- https://stackoverflow.com/questions/15763866/making-only-the-link-destination-editable-in-mailchimp#answer-26914066 -->
         <!-- hrefs in a tags might not be adressable in a template.  probably need to insert the link fully composed into a tag -->
-
-
+        <div mc:edit="$hvopen-upcoming-events">
           <dt class="hvopen_upcoming_event_date">Event Date</dt>
           <dd>
             <a href="" class="hvopen_upcoming_event_link">Name of Event linked to Meetup.com</a>
@@ -204,7 +218,24 @@
 
 <div class="hvopen_banner_img"></div>
 
-<!-- 
+<wrapper class="header">
+<container>
+  <row>
+    <columns>
+      <p>
+        <a href="*|UNSUB|*">Unsubscribe</a> *|EMAIL|* from this list.<br>
+
+        Copyright (C) *|CURRENT_YEAR|* *|LIST:COMPANY|* All rights
+        reserved.<br>
+        <a href="*|UPDATE_PROFILE|*">Update your profile</a>
+        <br>
+        <br>*|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*</p>
+      </columns>
+  </row>
+</container>
+</wrapper>
+
+<!--
   List of unique fields:
     $hvopen_logo
     $hvopen_prelim_callout_full_string_month

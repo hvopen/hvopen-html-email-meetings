@@ -9,6 +9,7 @@ $hv_light_grey: #f7f7f7;
 $hv_grey_accent: #b5b6bc;
 $hv_yellow: #ffd503;
 $hv_link_blue: #1684B9;
+$body-font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 
 /*
  *
@@ -27,7 +28,7 @@ $hv_link_blue: #1684B9;
  *
  */
 
- body, html, .body {
+body, html, .body {
 	background: $hv_light_grey !important;
 	p {
 		color: $hv_body_text;
@@ -43,7 +44,7 @@ $hv_link_blue: #1684B9;
 
 }
 
-.hvopen_prelim_callout, 
+.hvopen_prelim_callout,
 .hvopen_prelim_callout_full_string_month {
 	color: $hv_grey_accent;
 	font-style: italic;
@@ -77,12 +78,12 @@ $hv_link_blue: #1684B9;
     -webkit-border-radius: 3px;
  }
 
- .hvopen_cal_header {	
+ .hvopen_cal_header {
     display: block;
     border-radius: 2px 2px 0 0;
 	-webkit-border-radius: 2px 2px 0 0;
 
-	color: #17171a;	
+	color: #17171a;
 	line-height: 24px;
 	font-size: 16px;
 	background: $hv_yellow;
@@ -100,7 +101,7 @@ $hv_link_blue: #1684B9;
 .hvopen_date {
 	display: block;
 	position: relative;
-	
+
     font-size: 40px;
     font-weight: 700;
     line-height: 60px;

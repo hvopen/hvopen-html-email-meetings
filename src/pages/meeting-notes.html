@@ -1,0 +1,186 @@
+<!-- --- subject: My Hero Sidebar Template Subject --- -->
+
+<wrapper class="header">
+  <container>
+    <row class="collapse">
+      <columns small="3"></columns>
+
+      <columns small="6">
+        <a href="https://hvopen.org" target="_blank">
+          <img mc:edit="$hvopen_logo" src="https://gallery.mailchimp.com/7b8bf0f6fcf119dd091468f37/images/8182c70e-1ed0-4113-9352-e12d0e806bba.png">
+        </a>
+      </columns>
+
+      <columns small="3"></columns>
+    </row>
+  </container>
+</wrapper>
+
+<container>
+
+  <!-- prelim_callout -->
+  <row>
+    <columns large="16">
+      <spacer size="16"></spacer>
+      <h3 class="hvopen_prelim_callout">HV Open
+        <span class="hvopen_prelim_callout_full_string_month" mc:edit="$hvopen_prelim_callout_full_string_month">April</span> Notes</h3>
+    </columns>
+  </row>
+
+  <!-- main_content -->
+  <row>
+    <columns>
+      <h2 class="hvopen_talk_title" mc:edit="$hvopen_talk_title">Unity 3D</h2>
+      <div class="hvopen_talk_description" mc:edit="$hvopen_talk_description">
+        <p>Unity 3D (not to be confused with the Ubuntu's abandoned
+          Unity project), is a cross-platform game development
+          platform.  Using this platform, you can script your games in
+          JavaScript or C# and drag and drop objects and components
+          all in a flexible graphical user interface. In this
+          presentation, Matthias will demonstrate how to import sprite
+          sheets, attach and write scripts, make animations, create
+          artwork, game menus, tweak particle systems, use physics,
+          and more.
+        </p>
+        <h3>Speaker</h3>
+        <p>Matthias Johnson is the Director of Technology at Our Lady
+          of Lourdes High School, and Program Director for HV Open.
+          He's been teaching game programming as part of his role at
+          Lourdes the past few years and is excited to share some of
+          those experiences.</p>
+        <h3>Lightning Talks</h3>
+        <ul>
+          <li>
+            <a href="https://foundation.zurb.com/emails.html" rel="nofollow">Foundation for Emails 2</a> - Al Jachimiak</li>
+          <li>
+            <a href="https://hvopen.org/slack" rel="nofollow">HV Open Slack</a> - Joe Apuzo</li>
+          <li>The new HV Open website and Code of Conduct - Sean Dague</li>
+        </ul>
+
+      </div>
+      <!-- <button class="expand" href="#">Click Me!</button> -->
+    </columns>
+
+    </columns>
+  </row>
+
+  <row>
+    <hr class="hvopen_hr" />
+    <columns>
+      <div>
+        <h2>Support us on Patreon!</h2>
+        <p>
+          HV Open is powered by you! For the past 15 years HV Open has
+          provided high quality technical lectures to the Hudson
+          Valley. We do have a few hundred dollars a year of
+          incidental expenses to keep the group going.
+        </p>
+        <p>
+          Please consider a monthly Patreon donations
+          of <b>$2</b>, <b>$5</b>, or even <b>$10</b> to help us keep
+          the group going.
+        </p>
+        <center>
+          <div mc:edit="$hvopen_patreon_button">
+            <button href="#">Support HV Open</button>
+          </div>
+        </center>
+      </div>
+  </row>
+
+  <row>
+    <hr class="hvopen_hr" />
+    <columns>
+        <h2>Upcoming Events</h2>
+        <!-- https://stackoverflow.com/questions/15763866/making-only-the-link-destination-editable-in-mailchimp#answer-26914066 -->
+        <!-- hrefs in a tags might not be adressable in a template.  probably need to insert the link fully composed into a tag -->
+        <div mc:edit="$hvopen-upcoming-events">
+          <dt class="hvopen_upcoming_event_date">Event Date</dt>
+          <dd>
+            <a href="" class="hvopen_upcoming_event_link">Name of Event linked to Meetup.com</a>
+          </dd>
+
+      </div>
+    </columns>
+  </row>
+
+  <row class="hvopen_related_meetups">
+    <hr class="hvopen_hr" />
+    <columns>
+      <div mc:edit="$hvopen_related_metups">
+        <h2>Related Meetups</h2>
+        <p>
+          Like what's going on at MHVLUG? Want more? Check out all these other interesting technology groups in our region:
+        </p>
+
+        <ul>
+          <li>
+            <a href="https://www.meetup.com/ACM-Poughkeepsie/">Poughkeepsie Chapter of the ACM</a>
+          </li>
+          <li>
+            <a href="https://www.meetup.com/hvtech/">Hudson Valley Tech Meetup</a>
+          </li>
+          <li>
+            <a href="https://www.meetup.com/squidwrench/">Squidwrench hackerspace</a>
+          </li>
+        </ul>
+      </div>
+    </columns>
+  </row>
+
+  <row class="hvopen_call_for_speakers">
+    <hr class="hvopen_hr" />
+    <columns>
+      <div mc:edit="$hvopen_call_for_speakers">
+        <h2>Open Call for Speaker Topics </h2>
+        <p>Is there some topic that you'd love to hear more about? A topic that you've been working on that you'd like to present?
+          A great speaker in the area we should know about?</p>
+
+        <p>Let us know with our
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfcneYqNZciNmcNWyrNqNIjmtyeZ2EXmkFriBvuzy5GOhB5_Q/viewform">contact form</a>.</p>
+      </div>
+    </columns>
+  </row>
+
+</container>
+
+<div class="hvopen_banner_img"></div>
+
+<wrapper class="header">
+<container>
+  <row>
+    <columns>
+      <p>
+        <a href="*|UNSUB|*">Unsubscribe</a> *|EMAIL|* from this list.<br>
+
+        Copyright (C) *|CURRENT_YEAR|* *|LIST:COMPANY|* All rights
+        reserved.<br>
+        <a href="*|UPDATE_PROFILE|*">Update your profile</a>
+        <br>
+        <br>*|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*</p>
+      </columns>
+  </row>
+</container>
+</wrapper>
+
+<!--
+  List of unique fields:
+    $hvopen_logo
+    $hvopen_prelim_callout_full_string_month
+    $hvopen_talk_title
+    $hvopen_talk_image
+    $hvopen_talk_description
+    $hvopen_cal_3char_month
+    $hvopen_cal_date_e
+    $hvopen_cal_date_time_lMp
+    $hvopen_date_day_month_date_year
+    $hvopen_time_span
+    $hvopen_location_full
+    $hvopen_meetup_button_markup
+    $hvopen_cal_button_markup
+    $hvopen-upcoming-events
+    $hvopen_banner_img
+    $hvopen_related_metups
+    $hvopen_call_for_speakers
+
+ -->
